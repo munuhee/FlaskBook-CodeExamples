@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}My Website{% endblock %}</title>
+        <link rel="stylesheet"
+            href="{{ url_for('static', filename='css/styles.css', v='1.0' ) }}"
+            >
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li class="logo"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo"></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Content block for child templates to fill -->
+            {% block content %}{% endblock %}
+        </main>
+        <footer>
+            <!-- Footer content -->
+            <p>&copy; 2023 My Website</p>
+        </footer>
+        <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+    </body>
+</html>
