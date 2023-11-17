@@ -1,0 +1,6 @@
+[submodule "Flask-Form-Validation"]
+	path = Flask-Form-Validation
+	url = https://github.com/munuhee/Flask-Form-Validation-Demo.git
+[submodule "blog-project"]
+	path = blog-project
+	url = https://github.com/munuhee/blog-project.git
